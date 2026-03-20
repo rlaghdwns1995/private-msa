@@ -40,7 +40,7 @@ jobs:
 
       # EKS 클러스터 접속 설정
       - name: update cluster information
-        run: aws eks update-kubeconfig --name my-cluster --region ap-northeast-2
+        run: aws eks update-kubeconfig --name soldesk-eks --region ap-northeast-2
         # kubectl이 EKS 클러스터에 접속할 수 있도록 kubeconfig 생성
 
 
