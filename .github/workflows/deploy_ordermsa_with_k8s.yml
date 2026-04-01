@@ -93,7 +93,7 @@ jobs:
         if: steps.changes.outputs.gateway == 'true'
         env:         
           REGISTRY: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com
-          REPOSITORY: team2-apigateway
+          REPOSITORY: apigateway
           IMAGE_TAG: latest
         run: |
           docker build \
@@ -113,7 +113,7 @@ jobs:
         if: steps.changes.outputs.member == 'true'
         env:
           REGISTRY: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com
-          REPOSITORY: team2-member-service
+          REPOSITORY: member-service
           IMAGE_TAG: latest
         run: |
           docker build \
@@ -133,7 +133,7 @@ jobs:
         if: steps.changes.outputs.ordering == 'true'
         env:
           REGISTRY: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com
-          REPOSITORY: team2-ordering-service
+          REPOSITORY: ordering-service
           IMAGE_TAG: latest
         run: |
           docker build \
@@ -153,7 +153,7 @@ jobs:
         if: steps.changes.outputs.product == 'true'
         env:
           REGISTRY: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com
-          REPOSITORY: team2-product-service
+          REPOSITORY: product-service
           IMAGE_TAG: latest
         run: |
           docker build \
@@ -172,7 +172,7 @@ jobs:
         if: steps.changes.outputs.frontend == 'true'
         env:
           REGISTRY: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com
-          REPOSITORY: team2-frontend-service
+          REPOSITORY: frontend-service
           IMAGE_TAG: latest
         run: |
           docker build \
