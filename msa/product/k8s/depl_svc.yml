@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: product-container
-          image: 683668078297.dkr.ecr.ap-northeast-2.amazonaws.com/team2-product-service:latest
+          image: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com/team2-product-service:latest
           ports:
             - containerPort: 8080
           resources:

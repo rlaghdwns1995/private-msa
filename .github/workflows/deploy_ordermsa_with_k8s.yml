@@ -92,7 +92,7 @@ jobs:
       - name: gateway build and push docker image to ecr
         if: steps.changes.outputs.gateway == 'true'
         env:         
-          REGISTRY: 683668078297.dkr.ecr.ap-northeast-2.amazonaws.com
+          REGISTRY: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com
           REPOSITORY: team2-apigateway
           IMAGE_TAG: latest
         run: |
@@ -112,7 +112,7 @@ jobs:
       - name: member build and push docker image to ecr
         if: steps.changes.outputs.member == 'true'
         env:
-          REGISTRY: 683668078297.dkr.ecr.ap-northeast-2.amazonaws.com
+          REGISTRY: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com
           REPOSITORY: team2-member-service
           IMAGE_TAG: latest
         run: |
@@ -132,7 +132,7 @@ jobs:
       - name: order build and push docker image to ecr
         if: steps.changes.outputs.ordering == 'true'
         env:
-          REGISTRY: 683668078297.dkr.ecr.ap-northeast-2.amazonaws.com
+          REGISTRY: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com
           REPOSITORY: team2-ordering-service
           IMAGE_TAG: latest
         run: |
@@ -152,7 +152,7 @@ jobs:
       - name: product build and push docker image to ecr
         if: steps.changes.outputs.product == 'true'
         env:
-          REGISTRY: 683668078297.dkr.ecr.ap-northeast-2.amazonaws.com
+          REGISTRY: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com
           REPOSITORY: team2-product-service
           IMAGE_TAG: latest
         run: |
@@ -171,7 +171,7 @@ jobs:
       - name: frontend build and push docker image to ecr
         if: steps.changes.outputs.frontend == 'true'
         env:
-          REGISTRY: 683668078297.dkr.ecr.ap-northeast-2.amazonaws.com
+          REGISTRY: 446100759833.dkr.ecr.ap-northeast-2.amazonaws.com
           REPOSITORY: team2-frontend-service
           IMAGE_TAG: latest
         run: |
