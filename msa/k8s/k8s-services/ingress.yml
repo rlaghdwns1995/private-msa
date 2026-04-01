@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - "server.team2.store"
-    secretName: server-team2-store-tls
+    - "server.g87m2.academy"
+    secretName: server-g87m2-academy-tls
   rules:
-  - host: server.team2.store
+  - host: server.g87m2.academy
     http:
       paths:
       - path: /member-service

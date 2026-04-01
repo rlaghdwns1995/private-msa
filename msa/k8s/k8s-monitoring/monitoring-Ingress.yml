@@ -10,11 +10,11 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - prometheus.team2.store
-    - grafana.team2.store
-    secretName: monitoring-team2-store-tls
+    - prometheus.g87m2.academy
+    - grafana.g87m2.academy
+    secretName: monitoring-g87m2-academy-tls
   rules:
-  - host: prometheus.team2.store
+  - host: prometheus.g87m2.academy
     http:
       paths:
       - path: /
@@ -25,7 +25,7 @@ spec:
             port:
               number: 9090
 
-  - host: grafana.team2.store
+  - host: grafana.g87m2.academy
     http:
       paths:
       - path: /

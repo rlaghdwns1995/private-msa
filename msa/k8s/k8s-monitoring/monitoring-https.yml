@@ -1,15 +1,15 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: monitoring-team2-store-tls
+  name: monitoring-g87m2-academy-tls
   namespace: monitoring
 spec:
-  secretName: monitoring-team2-store-tls
+  secretName: monitoring-g87m2-academy-tls
   duration: 2160h  		# 90d
   renewBefore: 360h  	# 15d
   issuerRef:
     name: my-issuer
     kind: ClusterIssuer
   dnsNames:
-  - prometheus.team2.store
-  - grafana.team2.store
+  - prometheus.g87m2.academy
+  - grafana.g87m2.academy
